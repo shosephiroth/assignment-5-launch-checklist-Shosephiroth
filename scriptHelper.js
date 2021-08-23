@@ -22,28 +22,28 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-  //check if the test Input is empty
-  window.addEventListener("load", function() {
-    let form = document.querySelector("testForm");
-    let inputFields = document.querySelectorAll("input");
-    form.addEventListener("formSubmit", function(event){
-      let pilotNameInput = document.querySelector("input[name = pilotName");
-      console.log(pilotNameInput.value);
-      alert("submit clicked");
-    }) if {inputFields.value.length === 0) {
-      alert("fields are empty");
-      }
-  }); 
-  
-  
 
-  
-    // if it is, return 'Empty'
-  // check if it's not a number
-    // return 'Not a Number'
-  // else
-    // return 'Is a Number'
+  for (let i = 0; i < testInput.value.length; i++) {  
+  //check if the test Input is empty
+    if (testInput.value === null) { // testInput.value.length or just testInput?
+      alert('Empty');
+    } else if (testInput.value === undefined) {
+      alert('Empty');
+    } else if (testInput.value === NaN) {
+      alert('Not a number');
+    } else if (testInput.value.length === 0) {
+      alert('Not a number');
+    } else {
+      alert('Is a number');
+    }
+      // if it is, return 'Empty'
+    // check if it's not a number
+      // return 'Not a Number'
+    // else
+      // return 'Is a Number'
+  }
 }
+validateInput(document.getElementById("pilotName"))
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
   // check if any of the values are empty
