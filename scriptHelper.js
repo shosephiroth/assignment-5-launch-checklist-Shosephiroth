@@ -23,6 +23,21 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
 function validateInput(testInput) {
   //check if the test Input is empty
+  window.addEventListener("load", function() {
+    let form = document.querySelector("testForm");
+    let inputFields = document.querySelectorAll("input");
+    form.addEventListener("formSubmit", function(event){
+      let pilotNameInput = document.querySelector("input[name = pilotName");
+      console.log(pilotNameInput.value);
+      alert("submit clicked");
+    }) if {inputFields.value.length === 0) {
+      alert("fields are empty");
+      }
+  }); 
+  
+  
+
+  
     // if it is, return 'Empty'
   // check if it's not a number
     // return 'Not a Number'
