@@ -1,0 +1,86 @@
+
+> assignment5@1.0.0 test
+> jasmine
+
+Started
+.FFFFFF.FF.
+
+Failures:
+1) GRADING DOM MANIPULATION TEST:  Launch CheckList is ready to go
+  Message:
+    Expected '' to equal 'hidden'.
+  Stack:
+    Error: Expected '' to equal 'hidden'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:56:36)
+        at <Jasmine>
+
+2) GRADING DOM MANIPULATION TEST:  Launch Checklist when fuel too low for launch
+  Message:
+    ReferenceError: window is not defined
+  Stack:
+    ReferenceError: window is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:47:3)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:66:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+3) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy for launch
+  Message:
+    ReferenceError: window is not defined
+  Stack:
+    ReferenceError: window is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:47:3)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:79:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+4) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy and fuel too low for launch
+  Message:
+    ReferenceError: window is not defined
+  Stack:
+    ReferenceError: window is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:47:3)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:92:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+5) GRADING DOM MANIPULATION TEST:  Launch Checklist when everything is good to go
+  Message:
+    ReferenceError: window is not defined
+  Stack:
+    ReferenceError: window is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:47:3)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:105:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+6) GRADING DOM MANIPULATION TEST:  Mission target has the appropriate info
+  Message:
+    Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+  Stack:
+    Error: Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:121:25)
+        at <Jasmine>
+
+7) GRADING FETCH CALL TEST:  Student is fetching list of planets
+  Message:
+    Expected undefined to equal [ Object({ name: 'Tatooine', diameter: '10465 km', star: 'Tatoo I & Tatoo II', distance: '43000 light years from galactic core', image: 'https://www.nasa.gov/sites/default/files/images/587837main_Kepler16_transit_art2_full.jpg', moons: 3 }), Object({ name: 'Pern', diameter: 'measurement is under dispute', star: 'Alpha Sagittarius (a.k.a. Rukbat)', distance: 'Varies - find a library', image: 'https://www.nasa.gov/centers/langley/images/content/698148main_Brains_904_2.jpg', moons: 2 }), Object({ name: 'Saturn/Titan', diameter: '5149.5 km', star: 'Sol', distance: '1.4 billion km from Earth', image: 'https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg', moons: 0 }), Object({ name: 'Mars', diameter: '6779 km', star: 'Sol', distance: '225 million km from Earth', image: 'https://mars.nasa.gov/system/resources/detail_files/7808_global-color-views-mars-PIA00407-full2.jpg', moons: 2 }), Object({ name: 'K2-18b', diameter: '34500 km', star: 'K2-18', distance: '110 lig ....
+  Stack:
+    Error: Expected undefined to equal [ Object({ name: 'Tatooine', diameter: '10465 km', star: 'Tatoo I & Tatoo II', distance: '43000 light years from galactic core', image: 'https://www.nasa.gov/sites/default/files/images/587837main_Kepler16_transit_art2_full.jpg', moons: 3 }), Object({ name: 'Pern', diameter: 'measurement is under dispute', star: 'Alpha Sagittarius (a.k.a. Rukbat)', distance: 'Varies - find a library', image: 'https://www.nasa.gov/centers/langley/images/content/698148main_Brains_904_2.jpg', moons: 2 }), Object({ name: 'Saturn/Titan', diameter: '5149.5 km', star: 'Sol', distance: '1.4 billion km from Earth', image: 'https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg', moons: 0 }), Object({ name: 'Mars', diameter: '6779 km', star: 'Sol', distance: '225 million km from Earth', image: 'https://mars.nasa.gov/system/resources/detail_files/7808_global-color-views-mars-PIA00407-full2.jpg', moons: 2 }), Object({ name: 'K2-18b', diameter: '34500 km', star: 'K2-18', distance: '110 lig ....
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:66:22)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+8) GRADING FETCH CALL TEST:  Student selects planet at random
+  Message:
+    Expected false to be true.
+  Stack:
+    Error: Expected false to be true.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:71:87)
+        at <Jasmine>
+
+11 specs, 8 failures
+Finished in 0.276 seconds

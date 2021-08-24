@@ -24,15 +24,15 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 function validateInput(testInput) {   
 //check if the test Input is empty
 if (testInput === "") {
-  return 
+  return "Empty";
 // check if it's not a number
   // return 'Not a Number'
 } else if (isNaN(Number(testInput))) {
-  return "Not a number";
+  return "Not a Number";
 // else
   // return 'Is a Number'
 } else {
-  return "Is a number";
+  return "Is a Number";
 }
   
 
@@ -42,9 +42,20 @@ if (testInput === "") {
 //validateInput(document.getElementById("pilotName"))
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
+  //where should I put this?
+  //preventDefault();
+  window.addEventListener("load", function() {
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+      alert("submit clicked");
+    });
+  })
   // check if any of the values are empty
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
     // alert user that they need to fill out all the fields alert('message')
+  if (validateInput(document) === 'Empty' || validateInput(list) === 'Empty' || validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue === 'Empty' || validateInput(cargoLevelValue) === 'Empty')) {
+    alert('User needs to fill out all the fields');
+  }
   // check if fuelLevelValue and cargoLevelValue are not numbers
     // alert the user that must enter valid input
 

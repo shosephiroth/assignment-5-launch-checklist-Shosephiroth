@@ -1,0 +1,245 @@
+
+> assignment5@1.0.0 test
+> jasmine
+
+Started
+FFFFFFF.FF.
+
+Failures:
+1) GRADING DOM MANIPULATION TEST:  Function properly validates text
+  Message:
+    Expected undefined to equal 'Empty'.
+  Stack:
+    Error: Expected undefined to equal 'Empty'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:49:50)
+        at <Jasmine>
+  Message:
+    Expected 'Not a number' to equal 'Not a Number'.
+  Stack:
+    Error: Expected 'Not a number' to equal 'Not a Number'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:50:54)
+        at <Jasmine>
+  Message:
+    Expected 'Is a number' to equal 'Is a Number'.
+  Stack:
+    Error: Expected 'Is a number' to equal 'Is a Number'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:51:52)
+        at <Jasmine>
+
+2) GRADING DOM MANIPULATION TEST:  Launch CheckList is ready to go
+  Message:
+    Expected '' to equal 'hidden'.
+  Stack:
+    Error: Expected '' to equal 'hidden'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:56:36)
+        at <Jasmine>
+
+3) GRADING DOM MANIPULATION TEST:  Launch Checklist when fuel too low for launch
+  Message:
+    Expected '' to equal 'visible'.
+  Stack:
+    Error: Expected '' to equal 'visible'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:67:36)
+        at <Jasmine>
+  Message:
+    Expected '' to equal 'rgb(199, 37, 78)'.
+  Stack:
+    Error: Expected '' to equal 'rgb(199, 37, 78)'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:68:29)
+        at <Jasmine>
+  Message:
+    Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:69:29)
+        at <Jasmine>
+  Message:
+    Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+  Stack:
+    Error: Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:70:38)
+        at <Jasmine>
+  Message:
+    Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:71:41)
+        at <Jasmine>
+  Message:
+    Expected 'Fuel level high enough for launch' to equal 'Fuel level too low for launch'.
+  Stack:
+    Error: Expected 'Fuel level high enough for launch' to equal 'Fuel level too low for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:72:37)
+        at <Jasmine>
+
+4) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy for launch
+  Message:
+    Expected '' to equal 'visible'.
+  Stack:
+    Error: Expected '' to equal 'visible'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:80:36)
+        at <Jasmine>
+  Message:
+    Expected '' to equal 'rgb(199, 37, 78)'.
+  Stack:
+    Error: Expected '' to equal 'rgb(199, 37, 78)'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:81:29)
+        at <Jasmine>
+  Message:
+    Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:82:29)
+        at <Jasmine>
+  Message:
+    Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+  Stack:
+    Error: Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:83:38)
+        at <Jasmine>
+  Message:
+    Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:84:41)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo mass low enough for launch' to equal 'Cargo mass too heavy for launch'.
+  Stack:
+    Error: Expected 'Cargo mass low enough for launch' to equal 'Cargo mass too heavy for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:86:38)
+        at <Jasmine>
+
+5) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy and fuel too low for launch
+  Message:
+    Expected '' to equal 'visible'.
+  Stack:
+    Error: Expected '' to equal 'visible'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:93:36)
+        at <Jasmine>
+  Message:
+    Expected '' to equal 'rgb(199, 37, 78)'.
+  Stack:
+    Error: Expected '' to equal 'rgb(199, 37, 78)'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:94:29)
+        at <Jasmine>
+  Message:
+    Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Awaiting Information Before Launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:95:29)
+        at <Jasmine>
+  Message:
+    Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+  Stack:
+    Error: Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:96:38)
+        at <Jasmine>
+  Message:
+    Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:97:41)
+        at <Jasmine>
+  Message:
+    Expected 'Fuel level high enough for launch' to equal 'Fuel level too low for launch'.
+  Stack:
+    Error: Expected 'Fuel level high enough for launch' to equal 'Fuel level too low for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:98:37)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo mass low enough for launch' to equal 'Cargo mass too heavy for launch'.
+  Stack:
+    Error: Expected 'Cargo mass low enough for launch' to equal 'Cargo mass too heavy for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:99:38)
+        at <Jasmine>
+
+6) GRADING DOM MANIPULATION TEST:  Launch Checklist when everything is good to go
+  Message:
+    Expected '' to equal 'visible'.
+  Stack:
+    Error: Expected '' to equal 'visible'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:106:36)
+        at <Jasmine>
+  Message:
+    Expected '' to equal 'rgb(65, 159, 106)'.
+  Stack:
+    Error: Expected '' to equal 'rgb(65, 159, 106)'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:107:29)
+        at <Jasmine>
+  Message:
+    Expected 'Awaiting Information Before Launch' to equal 'Shuttle is Ready for Launch'.
+  Stack:
+    Error: Expected 'Awaiting Information Before Launch' to equal 'Shuttle is Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:108:29)
+        at <Jasmine>
+  Message:
+    Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+  Stack:
+    Error: Expected 'Pilot Ready' to equal 'Pilot Chris is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:109:38)
+        at <Jasmine>
+  Message:
+    Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'Co-pilot Ready' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:110:41)
+        at <Jasmine>
+
+7) GRADING DOM MANIPULATION TEST:  Mission target has the appropriate info
+  Message:
+    Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+  Stack:
+    Error: Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:121:25)
+        at <Jasmine>
+
+8) GRADING FETCH CALL TEST:  Student is fetching list of planets
+  Message:
+    Expected undefined to equal [ Object({ name: 'Tatooine', diameter: '10465 km', star: 'Tatoo I & Tatoo II', distance: '43000 light years from galactic core', image: 'https://www.nasa.gov/sites/default/files/images/587837main_Kepler16_transit_art2_full.jpg', moons: 3 }), Object({ name: 'Pern', diameter: 'measurement is under dispute', star: 'Alpha Sagittarius (a.k.a. Rukbat)', distance: 'Varies - find a library', image: 'https://www.nasa.gov/centers/langley/images/content/698148main_Brains_904_2.jpg', moons: 2 }), Object({ name: 'Saturn/Titan', diameter: '5149.5 km', star: 'Sol', distance: '1.4 billion km from Earth', image: 'https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg', moons: 0 }), Object({ name: 'Mars', diameter: '6779 km', star: 'Sol', distance: '225 million km from Earth', image: 'https://mars.nasa.gov/system/resources/detail_files/7808_global-color-views-mars-PIA00407-full2.jpg', moons: 2 }), Object({ name: 'K2-18b', diameter: '34500 km', star: 'K2-18', distance: '110 lig ....
+  Stack:
+    Error: Expected undefined to equal [ Object({ name: 'Tatooine', diameter: '10465 km', star: 'Tatoo I & Tatoo II', distance: '43000 light years from galactic core', image: 'https://www.nasa.gov/sites/default/files/images/587837main_Kepler16_transit_art2_full.jpg', moons: 3 }), Object({ name: 'Pern', diameter: 'measurement is under dispute', star: 'Alpha Sagittarius (a.k.a. Rukbat)', distance: 'Varies - find a library', image: 'https://www.nasa.gov/centers/langley/images/content/698148main_Brains_904_2.jpg', moons: 2 }), Object({ name: 'Saturn/Titan', diameter: '5149.5 km', star: 'Sol', distance: '1.4 billion km from Earth', image: 'https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg', moons: 0 }), Object({ name: 'Mars', diameter: '6779 km', star: 'Sol', distance: '225 million km from Earth', image: 'https://mars.nasa.gov/system/resources/detail_files/7808_global-color-views-mars-PIA00407-full2.jpg', moons: 2 }), Object({ name: 'K2-18b', diameter: '34500 km', star: 'K2-18', distance: '110 lig ....
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:66:22)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+9) GRADING FETCH CALL TEST:  Student selects planet at random
+  Message:
+    Expected false to be true.
+  Stack:
+    Error: Expected false to be true.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:71:87)
+        at <Jasmine>
+
+11 specs, 9 failures
+Finished in 0.259 seconds
