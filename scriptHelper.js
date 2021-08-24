@@ -23,14 +23,23 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
 function validateInput(testInput) {   
 //check if the test Input is empty
-  // if it is, return 'Empty'
+if (testInput === "") {
+  return 
 // check if it's not a number
   // return 'Not a Number'
+} else if (isNaN(Number(testInput))) {
+  return "Not a number";
 // else
   // return 'Is a Number'
+} else {
+  return "Is a number";
+}
+  
+
   
 }
-validateInput(document.getElementById("pilotName"))
+//test
+//validateInput(document.getElementById("pilotName"))
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
   // check if any of the values are empty
