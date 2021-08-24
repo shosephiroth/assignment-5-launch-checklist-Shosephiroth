@@ -21,27 +21,14 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    */
 }
 
-function validateInput(testInput) {
-
-  for (let i = 0; i < testInput.value.length; i++) {  
-  //check if the test Input is empty
-    if (testInput.value === null) { // testInput.value.length or just testInput?
-      alert('Empty');
-    } else if (testInput.value === undefined) {
-      alert('Empty');
-    } else if (testInput.value === NaN) {
-      alert('Not a number');
-    } else if (testInput.value.length === 0) {
-      alert('Not a number');
-    } else {
-      alert('Is a number');
-    }
-      // if it is, return 'Empty'
-    // check if it's not a number
-      // return 'Not a Number'
-    // else
-      // return 'Is a Number'
-  }
+function validateInput(testInput) {   
+//check if the test Input is empty
+  // if it is, return 'Empty'
+// check if it's not a number
+  // return 'Not a Number'
+// else
+  // return 'Is a Number'
+  
 }
 validateInput(document.getElementById("pilotName"))
 
