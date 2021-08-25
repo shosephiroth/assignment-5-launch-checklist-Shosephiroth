@@ -1,8 +1,24 @@
 // Write your helper functions here!
 require('isomorphic-fetch');
 
+// this code below doesn't work?
+//window.alert('Hello');
+
+
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
   // get the missionTarget div
+  let missionTargetDiv = document.getElementById("missionTarget");
+  missionTargetDiv.innerHTML = `
+  <h2>Mission Destination</h2>
+  <ol>
+      <li>Name: ${name}</li>
+      <li>Diameter: </li>
+      <li>Star: ${star}</li>
+      <li>Distance from Earth: </li>
+      <li>Number of Moons: </li>
+  </ol>
+  <img src="">  
+  `;
   // set the inner HTML to this
   // fill in the information that is passed in
    // Here is the HTML formatting for our mission target div.
@@ -33,34 +49,35 @@ if (testInput === "") {
   // return 'Is a Number'
 } else {
   return "Is a Number";
+}  
 }
-  
 
-  
-}
 //test
 //validateInput(document.getElementById("pilotName"))
 
-function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
-  //where should I put this?
-  //preventDefault();
-  window.addEventListener("load", function() {
-    let form = document.querySelector("form");
-    form.addEventListener("submit", function(event) {
-      alert("submit clicked");
-    });
-  })
+function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {  
+    // window.addEventListener("load", function() { // not sure I need this here
+  //   let form = document.querySelector("form");
+  //   form.addEventListener("submit", function(event) {      
+  //     alert("submit clicked");
+  //   });
+  // });  // end of unsure code
+
   // check if any of the values are empty
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
     // alert user that they need to fill out all the fields alert('message')
   if (validateInput(document) === 'Empty' || validateInput(list) === 'Empty' || validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue === 'Empty' || validateInput(cargoLevelValue) === 'Empty')) {
-    alert('User needs to fill out all the fields');
+    console.log('User needs to fill out all the fields');
   }
   // check if fuelLevelValue and cargoLevelValue are not numbers
     // alert the user that must enter valid input
+  if (isNaN(Number(fuelLevelValue)) || (isNaN(Number(cargoLevelValue)))) {
+    console.log('User needs to fill out all the fields');
+  }
 
 
   // set the list.style.visibility = 'visible'
+  list.style.visibility = 'visible';
   // get the pilot status, update the inner HTML to say `Pilot ${pilotValue} is ready for launch`
   // get the copilot status, update the inner HTML to say `CoPilot ${copilotValue} is ready for launch`
   // check if the fuel level is less 10,000
@@ -80,6 +97,7 @@ async function myFetch() {
 
   planetsReturned = await fetch('https://handlers.education.launchcode.org/static/planets.json').then(function (response) {
       // get the json from the response
+      return response.json;
         });
 
     return planetsReturned;
