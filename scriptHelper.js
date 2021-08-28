@@ -23,19 +23,19 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                 <img src="">
                 `
    */
-let missionTargetDiv = document.getElementById("missionTarget");
-missionTargetDiv.innerHTML = `
-  <h2>Mission Destination</h2>
-  <ol>
-      <li>Name: ${name}</li>
-      <li>Diameter: </li>
-      <li>Star: ${star}</li>
-      <li>Distance from Earth: </li>
-      <li>Number of Moons: </li>
-  </ol>
-  <img src="">  
-`;
-}
+  let missionTargetDiv = document.getElementById("missionTarget");
+  missionTargetDiv.innerHTML = `
+    <h2>Mission Destination</h2>
+    <ol>
+        <li>Name: ${name}</li>
+        <li>Diameter: </li>
+        <li>Star: ${star}</li>
+        <li>Distance from Earth: </li>
+        <li>Number of Moons: </li>
+    </ol>
+    <img src="">  
+  `;
+  }
 
 function validateInput(testInput) {   
 //check if the test Input is empty
@@ -67,22 +67,30 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
     // alert user that they need to fill out all the fields alert('message')
   if (validateInput(document) === 'Empty' || validateInput(list) === 'Empty' || validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue === 'Empty' || validateInput(cargoLevelValue) === 'Empty')) {
-    console.log('User needs to fill out all the fields');
+    alert('User needs to fill out all the fields');
   }
   // check if fuelLevelValue and cargoLevelValue are not numbers
     // alert the user that must enter valid input
   if (isNaN(Number(fuelLevelValue)) || (isNaN(Number(cargoLevelValue)))) {
-    console.log('User needs to fill out all the fields');
+    alert('User needs to fill out all the fields');
   }
 
 
   // set the list.style.visibility = 'visible'
   list.style.visibility = 'visible';
   // get the pilot status, update the inner HTML to say `Pilot ${pilotValue} is ready for launch`
+  pilotInput.innerHTML = `Pilot ${pilotValue} is ready for launch`
   // get the copilot status, update the inner HTML to say `CoPilot ${copilotValue} is ready for launch`
+  copilotInput.innerHTML = `CoPilot ${copilotValue} is ready for launch`
   // check if the fuel level is less 10,000
+  if (fuelLevelValue < 10000) {
     // change launchStatus to "Shuttle not ready for launch", and color to red
+    let launchStatus= "Shuttle not ready for launch";
     // change the fuelStatus to "Fuel level too low for launch"
+    let fuelStatus = "Fuel level too low for launch";
+
+  }
+    
 
     // check if the cargo level is more than 10,000
     // change launchStatus to "Shuttle not ready for launch", and color to red
