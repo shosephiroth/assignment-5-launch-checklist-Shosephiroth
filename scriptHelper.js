@@ -79,13 +79,15 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
   // set the list.style.visibility = 'visible'
   list.style.visibility = 'visible';
   // get the pilot status, update the inner HTML to say `Pilot ${pilotValue} is ready for launch`
-  pilotInput.innerHTML = `Pilot ${pilotValue} is ready for launch`
+  let pilotStatus = document.getElementById("pilotStatus");
+  pilotStatus.innerHTML = `Pilot ${pilotValue} is ready for launch`
   // get the copilot status, update the inner HTML to say `CoPilot ${copilotValue} is ready for launch`
-  copilotInput.innerHTML = `CoPilot ${copilotValue} is ready for launch`
+  let copilotStatus = document.getElementById("copilotStatus");
+  copilotStatus.innerHTML = `CoPilot ${copilotValue} is ready for launch`
   // check if the fuel level is less 10,000
   if (fuelLevelValue < 10000) {
     // change launchStatus to "Shuttle not ready for launch", and color to red
-    let launchStatus= "Shuttle not ready for launch";
+    let launchStatus = "Shuttle not ready for launch";
     // change the fuelStatus to "Fuel level too low for launch"
     let fuelStatus = "Fuel level too low for launch";
 
