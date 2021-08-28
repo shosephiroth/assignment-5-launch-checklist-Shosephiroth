@@ -83,4 +83,4 @@ Failures:
         at <Jasmine>
 
 11 specs, 8 failures
-Finished in 0.308 seconds
+Finished in 0.448 seconds
