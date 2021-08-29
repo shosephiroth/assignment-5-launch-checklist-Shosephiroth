@@ -17,6 +17,20 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
+  window.addEventListener("load", function() {
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+      if (testInput === "") {
+        return "Empty";
+      } else if (isNaN(Number(testInput))) {
+        return "Not a Number";
+      } else {
+        return "Is a Number";
+      }     
+
+    });
+
+  });
    
 }
 
