@@ -28,12 +28,12 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     <h2>Mission Destination</h2>
     <ol>
         <li>Name: ${name}</li>
-        <li>Diameter: </li>
+        <li>Diameter: ${diameter}</li>
         <li>Star: ${star}</li>
-        <li>Distance from Earth: </li>
-        <li>Number of Moons: </li>
+        <li>Distance from Earth: ${distance}</li>
+        <li>Number of Moons: ${moons}</li>
     </ol>
-    <img src="">  
+    <img src="${imageUrl}">  
   `;
   }
 
@@ -66,7 +66,7 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
   // check if any of the values are empty
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
     // alert user that they need to fill out all the fields alert('message')
-  if (validateInput(document) === 'Empty' || validateInput(list) === 'Empty' || validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue === 'Empty' || validateInput(cargoLevelValue) === 'Empty')) {
+  if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue) === 'Empty' || validateInput(cargoLevelValue) === 'Empty') {
     alert('User needs to fill out all the fields');
   }
   // check if fuelLevelValue and cargoLevelValue are not numbers
@@ -92,7 +92,7 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
     // change the fuelStatus to "Fuel level too low for launch"
     let fuelStatus = "Fuel level too low for launch";
 
-  }   
+  }
 
     // check if the cargo level is more than 10,000
     if (cargoLevelValue > 10000) {
@@ -125,8 +125,11 @@ async function myFetch() {
 }
 
 function pickPlanet(planets) {
-  // randomly pick a planet from the array
+  // randomly pick a planet from the array  
   // Math random for index
+  let planetPick = Math.floor(Math.random() * planets.length);
+  return planets(planetPick);
+
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
