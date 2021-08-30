@@ -21,11 +21,11 @@ function validateInput(testInput) {
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
       if (testInput === "") {
-        alert("Empty");
+        return "Empty";
       } else if (isNaN(Number(testInput))) {
-        alert("Not a Number");
+        return "Not a Number";
       } else {
-        alert("Is a Number");
+        return "Is a Number";
       }     
 
     });
@@ -36,7 +36,7 @@ function validateInput(testInput) {
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
   let faultyItemsDiv = document.getElementById("faultyItems");
-
+  
    
 }
 
