@@ -36,6 +36,23 @@ function validateInput(testInput) {
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
   let faultyItemsDiv = document.getElementById("faultyItems");
+  list = document.getElementById("faultyItems");
+  list.style.visibility = 'visible';
+  let pilotStatus = document.getElementById("pilotStatus");
+  pilotStatus.innerHTML = `Pilot ${pilotValue} is ready for launch`;
+  let copilotStatus = document.getElementById("copilotStatus");
+  copilotStatus.innerHTML = `CoPilot ${copilotValue} is ready for launch`
+  let launchStatus = document.getElementById("launchStatus");
+
+  if (validateInput(pilotValue) === "Empty" || validateInput(copilotValue) === "Empty" || validateInput(fuelLevelValue) === "Empty" || validateInput(cargoLevelValue) === "Empty") {
+    alert("Please fill in all required fields. All fields are required.");
+
+  } else if (validateInput(fuelLevelValue) === "Not a Number" || validateInput(cargoLevelValue) === "Not a Number") {
+    alert("Number required for fuel and cargo levels");
+
+  } else if (validateInput(pilotValue) === 'Is a Number' || validateInput(copilotValue) === "Is a Number") {
+    alert("Only enter letters for pilot and copilot names");
+  }
   
    
 }
