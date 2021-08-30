@@ -1,0 +1,101 @@
+
+> assignment5@1.0.0 test
+> jasmine
+
+Started
+FFFFFFF.FF.
+
+Failures:
+1) GRADING DOM MANIPULATION TEST:  Function properly validates text
+  Message:
+    ReferenceError: window is not defined
+  Stack:
+    ReferenceError: window is not defined
+        at Object.validateInput (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:20:3)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:49:31)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+2) GRADING DOM MANIPULATION TEST:  Launch CheckList is ready to go
+  Message:
+    Expected '' to equal 'hidden'.
+  Stack:
+    Error: Expected '' to equal 'hidden'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:56:36)
+        at <Jasmine>
+
+3) GRADING DOM MANIPULATION TEST:  Launch Checklist when fuel too low for launch
+  Message:
+    ReferenceError: pilotValue is not defined
+  Stack:
+    ReferenceError: pilotValue is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:42:36)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:66:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+4) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy for launch
+  Message:
+    ReferenceError: pilotValue is not defined
+  Stack:
+    ReferenceError: pilotValue is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:42:36)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:79:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+5) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy and fuel too low for launch
+  Message:
+    ReferenceError: pilotValue is not defined
+  Stack:
+    ReferenceError: pilotValue is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:42:36)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:92:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+6) GRADING DOM MANIPULATION TEST:  Launch Checklist when everything is good to go
+  Message:
+    ReferenceError: pilotValue is not defined
+  Stack:
+    ReferenceError: pilotValue is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:42:36)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:105:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+7) GRADING DOM MANIPULATION TEST:  Mission target has the appropriate info
+  Message:
+    Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+  Stack:
+    Error: Expected '<!--Fetchsomeplanetarydata-->' to equal '<h2>MissionDestination</h2><ol><li>Name:Saturn/Titan</li><li>Diameter:5149.5km</li><li>Star:Sol</li><li>DistancefromEarth:1.4billionkmfromEarth</li><li>NumberofMoons:0</li></ol><imgsrc="https://solarsystem.nasa.gov/system/resources/detail_files/16278_PIA20016.jpg">'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:121:25)
+        at <Jasmine>
+
+8) GRADING FETCH CALL TEST:  Student is fetching list of planets
+  Message:
+    TypeError: Only absolute URLs are supported
+  Stack:
+    TypeError: Only absolute URLs are supported
+        at getNodeRequestOptions (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/node-fetch/lib/index.js:1305:9)
+        at /Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/node-fetch/lib/index.js:1410:19
+        at new Promise (<anonymous>)
+        at fetch (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/node-fetch/lib/index.js:1407:9)
+        at module.exports (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/isomorphic-fetch/fetch-npm-node.js:8:19)
+        at Object.myFetch (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:63:29)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:65:45)
+        at <Jasmine>
+
+9) GRADING FETCH CALL TEST:  Student selects planet at random
+  Message:
+    Expected false to be true.
+  Stack:
+    Error: Expected false to be true.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:71:87)
+        at <Jasmine>
+
+11 specs, 9 failures
+Finished in 0.172 seconds
