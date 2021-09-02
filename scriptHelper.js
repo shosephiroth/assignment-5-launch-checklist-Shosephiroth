@@ -55,8 +55,9 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
   // check if fuelLevelValue and cargoLevelValue are not numbers
     // alert the user that must enter valid input
 
-  if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue) === 'Empty' || validateInput(cargoLevelValue) === 'Empty') {
+  if (validateInput(pilotValue.value) === 'Empty' || validateInput(copilotValue.value) === 'Empty' || validateInput(fuelLevelValue.value) === 'Empty' || validateInput(cargoLevelValue.value) === 'Empty') {
     alert("Valid input required!");
+    //event.preventDefault();
   }
 
 
