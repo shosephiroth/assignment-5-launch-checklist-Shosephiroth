@@ -38,16 +38,19 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
-  let form = document.querySelector("form");
-  window.addEventListener("load", () => {
-    form.addEventListener("formSubmit", () => {
-      let pilotValue = document.querySelector("input[name=pilotName]");
-      let copilotValue = document.querySelector("input[name=copilotName]");
-      let fuelLevelValue = document.querySelector("input[name=copilotName]");
-      let cargoLevelValue = document.querySelector("input[name=cargoMass]");
-    });
+  // not sure I need this here
+  // let form = document.querySelector("form");
+  // window.addEventListener("load", () => {
+  //   form.addEventListener("formSubmit", () => {
+  //     let pilotValue = document.querySelector("input[name=pilotName]");
+  //     let copilotValue = document.querySelector("input[name=copilotName]");
+  //     let fuelLevelValue = document.querySelector("input[name=copilotName]");
+  //     let cargoLevelValue = document.querySelector("input[name=cargoMass]");
+  //   });
 
-  });
+  // });
+
+  // end of possibly useless code
   
   // check if any of the values are empty
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
@@ -57,10 +60,10 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
 
   if (validateInput(pilotValue.value) === 'Empty' || validateInput(copilotValue.value) === 'Empty' || validateInput(fuelLevelValue.value) === 'Empty' || validateInput(cargoLevelValue.value) === 'Empty') {
     alert("Valid input required!");
-    preventDefault(); // event.preventDefault()? What is the event? Do I need to add to form.addEventListener?
+    //preventDefault(); // event.preventDefault()? What is the event? Do I need to add to form.addEventListener?
   } else if (NaN(Number(fuelLevelValue)) || NaN(Number(cargoLevelValue))) {
       alert("Must enter a Number for Fuel Level and Cargo Mass values");
-      preventDefault();
+      //preventDefault();
   };
 
 
