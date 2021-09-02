@@ -57,8 +57,11 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
 
   if (validateInput(pilotValue.value) === 'Empty' || validateInput(copilotValue.value) === 'Empty' || validateInput(fuelLevelValue.value) === 'Empty' || validateInput(cargoLevelValue.value) === 'Empty') {
     alert("Valid input required!");
-    //event.preventDefault();
-  }
+    preventDefault(); // event.preventDefault()? What is the event? Do I need to add to form.addEventListener?
+  } else if (NaN(Number(fuelLevelValue)) || NaN(Number(cargoLevelValue))) {
+      alert("Must enter a Number for Fuel Level and Cargo Mass values");
+      preventDefault();
+  };
 
 
   // set the list.style.visibility = 'visible'
