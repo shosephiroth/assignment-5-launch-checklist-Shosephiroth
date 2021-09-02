@@ -34,15 +34,30 @@ function validateInput(testInput) {
   } else if (isNaN(Number(testInput))) {
     return "Not a Number";
   } else return "Is a Number";
-  
+
 }
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
+  let form = document.querySelector("form");
+  window.addEventListener("load", () => {
+    form.addEventListener("formSubmit", () => {
+      let pilotValue = document.querySelector("input[name=pilotName]");
+      let copilotValue = document.querySelector("input[name=copilotName]");
+      let fuelLevelValue = document.querySelector("input[name=copilotName]");
+      let cargoLevelValue = document.querySelector("input[name=cargoMass]");
+    });
+
+  });
+  
   // check if any of the values are empty
     // if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty')
     // alert user that they need to fill out all the fields alert('message')
   // check if fuelLevelValue and cargoLevelValue are not numbers
     // alert the user that must enter valid input
+
+  if (validateInput(pilotValue) === 'Empty' || validateInput(copilotValue) === 'Empty' || validateInput(fuelLevelValue) === 'Empty' || validateInput(cargoLevelValue) === 'Empty') {
+    alert("Valid input required!");
+  }
 
 
   // set the list.style.visibility = 'visible'
