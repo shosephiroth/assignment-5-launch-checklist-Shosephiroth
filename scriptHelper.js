@@ -38,18 +38,7 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue, cargoLevelValue) {
-  // not sure I need this here
-  // let form = document.querySelector("form");
-  // window.addEventListener("load", () => {
-  //   form.addEventListener("formSubmit", () => {
-  //     let pilotValue = document.querySelector("input[name=pilotName]");
-  //     let copilotValue = document.querySelector("input[name=copilotName]");
-  //     let fuelLevelValue = document.querySelector("input[name=copilotName]");
-  //     let cargoLevelValue = document.querySelector("input[name=cargoMass]");
-  //   });
-
-  // });
-
+  
   // end of possibly useless code
   
   // check if any of the values are empty
@@ -68,7 +57,9 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
 
 
   // set the list.style.visibility = 'visible'
+  list.style.visibility = 'visible';
   // get the pilot status, update the inner HTML to say `Pilot ${pilotValue} is ready for launch`
+
   // get the copilot status, update the inner HTML to say `CoPilot ${copilotValue} is ready for launch`
   // check if the fuel level is less 10,000
     // change launchStatus to "Shuttle not ready for launch", and color to red
@@ -80,7 +71,7 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
 
     // if both fuel and cargo are good
       // change the launchStatus to "Shuttle is Ready for Launch" and color to green
-}
+
 
 async function myFetch() {
     let planetsReturned;
