@@ -27,6 +27,18 @@ function addDestinationInfo(
                 <img src="">
                 `
    */
+  let missionTargetDiv = document.getElementById("missionTarget");
+  missionTargetDiv.innerHTML = `
+    <h2>Mission Destination</h2>
+      <ol>
+          <li>Name: ${name}</li>
+          <li>Diameter: ${diameter}</li>
+          <li>Star: ${star}</li>
+          <li>Distance from Earth: ${distance}</li>
+          <li>Number of Moons: ${moons}</li>
+      </ol>
+      <img src="${imageUrl}">
+  `;
 }
 
 function validateInput(testInput) {
@@ -130,6 +142,8 @@ async function myFetch() {
 function pickPlanet(planets) {
   // randomly pick a planet from the array
   // Math random for index
+  let planet = planets[Math.floor(Math.random() * planets.length)];
+  return planet;
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
