@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 
-// const { myFetch, pickPlanet, addDestinationInfo } = require("./scriptHelper");
+const { myFetch, pickPlanet, addDestinationInfo } = require("./scriptHelper");
 
 window.addEventListener("load", function () {
   let listedPlanets;
