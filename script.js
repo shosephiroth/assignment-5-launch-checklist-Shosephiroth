@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
   let form = document.querySelector("form");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    let pilotValue = document.querySelector("input[name=pilotName]"); // reuturns a DOM node (object)
+    let pilotValue = document.querySelector("input[name=pilotName]"); // returns a DOM node (object)
     let copilotValue = document.querySelector("input[name=copilotName]");
     let fuelLevelValue = document.querySelector("input[name=copilotName]");
     let cargoLevelValue = document.querySelector("input[name=cargoMass]");
