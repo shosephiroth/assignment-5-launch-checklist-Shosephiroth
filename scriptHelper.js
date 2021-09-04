@@ -119,7 +119,7 @@ function formSubmission(
 
     // if both fuel and cargo are good
     // change the launchStatus to "Shuttle is Ready for Launch" and color to green
-    if (fuelLevelValue < 10000 && cargoLevelValue > 10000) {
+    if (fuelLevelValue > 10000 && cargoLevelValue < 10000) {
       launchStatus.innerHTML = "Shuttle is Ready for Launch";
       launchStatus.style.color = "green";
     }
