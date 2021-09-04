@@ -11,7 +11,7 @@ Failures:
     Unhandled promise rejection: ReferenceError: fetch is not defined
   Stack:
     undefinedReferenceError: fetch is not defined
-        at myFetch (file:///Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:133:3)
+        at myFetch (file:///Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:132:3)
         at file:///Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/script.js:8:31
         at callTheUserObjectsOperation (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
         at innerInvokeEventListeners (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:318:25)
@@ -33,53 +33,140 @@ Failures:
 
 3) GRADING DOM MANIPULATION TEST:  Launch Checklist when fuel too low for launch
   Message:
-    ReferenceError: fuelStatus is not defined
+    Expected 'red' to equal 'rgb(199, 37, 78)'.
   Stack:
-    ReferenceError: fuelStatus is not defined
-        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
-        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:66:23)
+    Error: Expected 'red' to equal 'rgb(199, 37, 78)'.
         at <Jasmine>
-        at processImmediate (internal/timers.js:464:21)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:68:29)
+        at <Jasmine>
+  Message:
+    Expected 'Shuttle not ready for launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Shuttle not ready for launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:69:29)
+        at <Jasmine>
+  Message:
+    Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:71:41)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo status is good for launch!' to equal 'Cargo mass low enough for launch'.
+  Stack:
+    Error: Expected 'Cargo status is good for launch!' to equal 'Cargo mass low enough for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:73:38)
+        at <Jasmine>
 
 4) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy for launch
   Message:
-    ReferenceError: fuelStatus is not defined
+    Expected 'red' to equal 'rgb(199, 37, 78)'.
   Stack:
-    ReferenceError: fuelStatus is not defined
-        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
-        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:79:23)
+    Error: Expected 'red' to equal 'rgb(199, 37, 78)'.
         at <Jasmine>
-        at processImmediate (internal/timers.js:464:21)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:81:29)
+        at <Jasmine>
+  Message:
+    Expected 'Shuttle not ready for launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Shuttle not ready for launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:82:29)
+        at <Jasmine>
+  Message:
+    Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:84:41)
+        at <Jasmine>
+  Message:
+    Expected 'Fuel status good for launch!' to equal 'Fuel level high enough for launch'.
+  Stack:
+    Error: Expected 'Fuel status good for launch!' to equal 'Fuel level high enough for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:85:37)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo level too high for launch' to equal 'Cargo mass too heavy for launch'.
+  Stack:
+    Error: Expected 'Cargo level too high for launch' to equal 'Cargo mass too heavy for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:86:38)
+        at <Jasmine>
 
 5) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy and fuel too low for launch
   Message:
-    ReferenceError: fuelStatus is not defined
+    Expected 'green' to equal 'rgb(199, 37, 78)'.
   Stack:
-    ReferenceError: fuelStatus is not defined
-        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
-        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:92:23)
+    Error: Expected 'green' to equal 'rgb(199, 37, 78)'.
         at <Jasmine>
-        at processImmediate (internal/timers.js:464:21)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:94:29)
+        at <Jasmine>
+  Message:
+    Expected 'Shuttle is Ready for Launch' to equal 'Shuttle Not Ready for Launch'.
+  Stack:
+    Error: Expected 'Shuttle is Ready for Launch' to equal 'Shuttle Not Ready for Launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:95:29)
+        at <Jasmine>
+  Message:
+    Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:97:41)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo level too high for launch' to equal 'Cargo mass too heavy for launch'.
+  Stack:
+    Error: Expected 'Cargo level too high for launch' to equal 'Cargo mass too heavy for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:99:38)
+        at <Jasmine>
 
 6) GRADING DOM MANIPULATION TEST:  Launch Checklist when everything is good to go
   Message:
-    ReferenceError: fuelStatus is not defined
+    Expected 'green' to equal 'rgb(65, 159, 106)'.
   Stack:
-    ReferenceError: fuelStatus is not defined
-        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
-        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:105:23)
+    Error: Expected 'green' to equal 'rgb(65, 159, 106)'.
         at <Jasmine>
-        at processImmediate (internal/timers.js:464:21)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:107:29)
+        at <Jasmine>
+  Message:
+    Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+  Stack:
+    Error: Expected 'CoPilot Bob is ready for launch' to equal 'Co-pilot Bob is ready for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:110:41)
+        at <Jasmine>
+  Message:
+    Expected 'Fuel status good for launch!' to equal 'Fuel level high enough for launch'.
+  Stack:
+    Error: Expected 'Fuel status good for launch!' to equal 'Fuel level high enough for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:111:37)
+        at <Jasmine>
+  Message:
+    Expected 'Cargo status is good for launch!' to equal 'Cargo mass low enough for launch'.
+  Stack:
+    Error: Expected 'Cargo status is good for launch!' to equal 'Cargo mass low enough for launch'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:112:38)
+        at <Jasmine>
 
 7) GRADING FETCH CALL TEST:  Student selects planet at random
   Message:
     ReferenceError: document is not defined
   Stack:
     ReferenceError: document is not defined
-        at Object.pickPlanet (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:149:5)
+        at Object.pickPlanet (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:148:5)
         at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:71:57)
         at <Jasmine>
         at processImmediate (internal/timers.js:464:21)
 
 11 specs, 7 failures
-Finished in 0.47 seconds
+Finished in 0.378 seconds
