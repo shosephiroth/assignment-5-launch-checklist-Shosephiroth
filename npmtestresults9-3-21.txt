@@ -1,0 +1,85 @@
+
+> assignment5@1.0.0 test
+> jasmine
+
+Started
+FFFFFF...F.
+
+Failures:
+1) GRADING DOM MANIPULATION TEST:  Function properly validates text
+  Message:
+    Unhandled promise rejection: ReferenceError: fetch is not defined
+  Stack:
+    undefinedReferenceError: fetch is not defined
+        at myFetch (file:///Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:133:3)
+        at file:///Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/script.js:8:31
+        at callTheUserObjectsOperation (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:318:25)
+        at invokeEventListeners (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at EventTargetImpl._dispatch (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at fireAnEvent (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/helpers/events.js:18:36)
+        at Document.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/browser/Window.js:776:9)
+        at Document.callTheUserObjectsOperation (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:318:25)
+
+2) GRADING DOM MANIPULATION TEST:  Launch CheckList is ready to go
+  Message:
+    Expected '' to equal 'hidden'.
+  Stack:
+    Error: Expected '' to equal 'hidden'.
+        at <Jasmine>
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:56:36)
+        at <Jasmine>
+
+3) GRADING DOM MANIPULATION TEST:  Launch Checklist when fuel too low for launch
+  Message:
+    ReferenceError: fuelStatus is not defined
+  Stack:
+    ReferenceError: fuelStatus is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:66:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+4) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy for launch
+  Message:
+    ReferenceError: fuelStatus is not defined
+  Stack:
+    ReferenceError: fuelStatus is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:79:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+5) GRADING DOM MANIPULATION TEST:  Launch Checklist when cargo too heavy and fuel too low for launch
+  Message:
+    ReferenceError: fuelStatus is not defined
+  Stack:
+    ReferenceError: fuelStatus is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:92:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+6) GRADING DOM MANIPULATION TEST:  Launch Checklist when everything is good to go
+  Message:
+    ReferenceError: fuelStatus is not defined
+  Stack:
+    ReferenceError: fuelStatus is not defined
+        at Object.formSubmission (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:98:5)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-dom.spec.js:105:23)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+7) GRADING FETCH CALL TEST:  Student selects planet at random
+  Message:
+    ReferenceError: document is not defined
+  Stack:
+    ReferenceError: document is not defined
+        at Object.pickPlanet (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/scriptHelper.js:149:5)
+        at UserContext.<anonymous> (/Users/darksho/Desktop/LaunchCode/Projects/graded-assignments/assignment-5-launch-checklist-Mattx2k1/spec/grading-fetch.spec.js:71:57)
+        at <Jasmine>
+        at processImmediate (internal/timers.js:464:21)
+
+11 specs, 7 failures
+Finished in 0.47 seconds
