@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
     event.preventDefault();
     let pilotValue = document.querySelector("input[name=pilotName]"); // returns a DOM node (object)
     let copilotValue = document.querySelector("input[name=copilotName]");
-    let fuelLevelValue = document.querySelector("input[name=copilotName]");
+    let fuelLevelValue = document.querySelector("input[name=fuelLevel]");
     let cargoLevelValue = document.querySelector("input[name=cargoMass]");
     formSubmission(
       document,
