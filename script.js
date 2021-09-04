@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 
   // get the form
   // add a listener to when the form submit
-  //  form.addEventListener('submit', function(event) {
+  //  form.addEventListener('submit', function(event) {z
   // if it's not, preventDefault
   // get the value for each of the input field
   // let pilotInput = this.document.querySelector("input[name=pilotName]"); // object
